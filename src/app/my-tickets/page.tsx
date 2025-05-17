@@ -66,6 +66,7 @@ const MyTicketsPage = async () => {
               <TableHeader>
                 <TableRow>
                   <TableHead>Event</TableHead>
+                  <TableHead>Title</TableHead>
                   <TableHead>Date</TableHead>
                   <TableHead>Time</TableHead>
                   <TableHead>Location</TableHead>
@@ -77,7 +78,7 @@ const MyTicketsPage = async () => {
                 {bookings.map((booking) => (
                   <TableRow key={booking._id}>
                     <TableCell>
-                      <div className="flex items-center gap-3">
+                      <div className="flex items-center">
                         {booking.eventId.imageUrl && (
                           <img
                             src={booking.eventId.imageUrl}
@@ -85,8 +86,10 @@ const MyTicketsPage = async () => {
                             className="w-10 h-10 rounded-full object-cover"
                           />
                         )}
-                        <span className="font-medium">{booking.eventId.title}</span>
                       </div>
+                    </TableCell>
+                    <TableCell>
+                      <span className="font-medium">{booking.eventId.title}</span>
                     </TableCell>
                     <TableCell>
                       {format(new Date(booking.eventId.startDateTime), "PPP")}
