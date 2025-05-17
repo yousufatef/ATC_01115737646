@@ -54,19 +54,18 @@ A full-stack event booking platform that allows users to browse and book events,
 
 ### 👤 User Features
 - Register & log in via Clerk
-- View and manage personal bookings
+- View personal bookings
 - View a detailed **User Profile**
 - Book events with a single click
 - View "Congratulations" screen after booking with engaging **Lottie animations**
-- Create and manage **tickets** for each booking
 - Search for events on the **Home Page**
 - Grid/list view for event listings
 - Dark mode and light mode toggle
 
 ### 🏠 Home Page
 - Grid view of events with responsive layout
-- Events already booked by user display **"Booked"** label
-- Non-booked events have **"Book Now"** button
+- Events with show details button
+- Event details page if already booked by user display **"Booked"** label else **"Book Now"** button
 - Search bar to filter events by name or category
 
 ### 🧾 Admin Panel (Role: Admin)
